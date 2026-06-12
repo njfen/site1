@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peptide Guide — личная база</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-icon">🧬</span>
+        <div>
+          <div class="brand-title">Peptide Guide</div>
+          <div class="brand-sub">личная база</div>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <input type="search" id="searchInput" placeholder="Поиск: sema, adamax, bpc…" autocomplete="off">
+      </div>
+
+      <nav class="nav" id="mainNav">
+        <button class="nav-item active" data-route="home">🏠 Главная</button>
+        <button class="nav-item" data-route="all">📋 Все A–Z</button>
+        <button class="nav-item" data-route="favorites">⭐ Избранное</button>
+        <button class="nav-item" data-route="disclaimer">ℹ️ О базе</button>
+      </nav>
+
+      <div class="sidebar-cats" id="sidebarCats"></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Меню">☰</button>
+        <div class="breadcrumbs" id="breadcrumbs"></div>
+      </header>
+
+      <section class="content" id="content">
+        <div class="loading">Загружаю базу…</div>
+      </section>
+    </main>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <script src="/js/app.js" type="module"></script>
+</body>
+</html>
