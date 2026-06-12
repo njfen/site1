@@ -1,0 +1,9 @@
+# Cloudflare Workers/Pages — статический сайт из web/static
+# Build: python web/export_static.py
+# Deploy: npx wrangler deploy
+
+name = "peptide-guide"
+compatibility_date = "2024-06-12"
+
+[assets]
+directory = "./web/static"
